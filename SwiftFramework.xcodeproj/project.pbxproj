@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F8BDAE731D335A9700CC20EE /* SwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F8BDAE721D335A9700CC20EE /* SwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8BDAE7B1D335B1300CC20EE /* SwiftStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BDAE7A1D335B1300CC20EE /* SwiftStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8BDAE6F1D335A9700CC20EE /* SwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BDAE721D335A9700CC20EE /* SwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFramework.h; sourceTree = "<group>"; };
 		F8BDAE741D335A9700CC20EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8BDAE7A1D335B1300CC20EE /* SwiftStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				F8BDAE721D335A9700CC20EE /* SwiftFramework.h */,
 				F8BDAE741D335A9700CC20EE /* Info.plist */,
+				F8BDAE7A1D335B1300CC20EE /* SwiftStruct.swift */,
 			);
 			path = SwiftFramework;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BDAE7B1D335B1300CC20EE /* SwiftStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		F8BDAE781D335A9700CC20EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +245,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.SwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F8BDAE791D335A9700CC20EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
