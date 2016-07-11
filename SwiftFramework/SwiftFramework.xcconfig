@@ -1,0 +1,8 @@
+//
+//  SwiftFramework.xcconfig
+//  SwiftFramework
+//
+//  Created by Ben Chatelain on 7/10/16.
+//  Copyright © 2016 Ben Chatelain. All rights reserved.
+//
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES

@@ -12,6 +12,7 @@
 		F8993FE01D335CDC00B8A7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8993FDE1D335CDC00B8A7FF /* Main.storyboard */; };
 		F8993FE21D335CDC00B8A7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8993FE11D335CDC00B8A7FF /* Assets.xcassets */; };
 		F8993FE51D335CDC00B8A7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8993FE31D335CDC00B8A7FF /* LaunchScreen.storyboard */; };
+		F8993FEA1D335D0800B8A7FF /* SwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BDAE6F1D335A9700CC20EE /* SwiftFramework.framework */; };
 		F8BDAE731D335A9700CC20EE /* SwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F8BDAE721D335A9700CC20EE /* SwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8BDAE7B1D335B1300CC20EE /* SwiftStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BDAE7A1D335B1300CC20EE /* SwiftStruct.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		F8993FE11D335CDC00B8A7FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8993FE41D335CDC00B8A7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8993FE61D335CDC00B8A7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8993FEB1D335D6800B8A7FF /* SwiftFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftFramework.xcconfig; sourceTree = "<group>"; };
 		F8BDAE6F1D335A9700CC20EE /* SwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BDAE721D335A9700CC20EE /* SwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFramework.h; sourceTree = "<group>"; };
 		F8BDAE741D335A9700CC20EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8993FEA1D335D0800B8A7FF /* SwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				F8BDAE721D335A9700CC20EE /* SwiftFramework.h */,
 				F8BDAE741D335A9700CC20EE /* Info.plist */,
 				F8BDAE7A1D335B1300CC20EE /* SwiftStruct.swift */,
+				F8993FEB1D335D6800B8A7FF /* SwiftFramework.xcconfig */,
 			);
 			path = SwiftFramework;
 			sourceTree = "<group>";
@@ -270,6 +274,7 @@
 		};
 		F8BDAE751D335A9700CC20EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8993FEB1D335D6800B8A7FF /* SwiftFramework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -319,6 +324,7 @@
 		};
 		F8BDAE761D335A9700CC20EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8993FEB1D335D6800B8A7FF /* SwiftFramework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -367,7 +373,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwiftFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -386,7 +391,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwiftFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
